@@ -69,10 +69,10 @@ export class Client {
       config.projectId ||
       config.serviceAccountKeyConfig.project_id;
     this.organizationId = organizationId || config.organizationId;
-    this.credentials = {
-      client_email: config.serviceAccountKeyConfig.client_email,
-      private_key: config.serviceAccountKeyConfig.private_key,
-    };
+    //this.credentials = {
+    //  client_email: config.serviceAccountKeyConfig.client_email,
+    //  private_key: config.serviceAccountKeyConfig.private_key,
+    //};
     this.folderId = config.folderId;
     this.onRetry = onRetry;
   }
