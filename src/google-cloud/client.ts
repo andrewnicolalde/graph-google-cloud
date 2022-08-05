@@ -79,7 +79,7 @@ export class Client {
 
   private async getClient(): Promise<BaseExternalAccountClient> {
     const auth = new google.auth.GoogleAuth({
-      credentials: this.credentials,
+      //credentials: this.credentials,
       scopes: ['https://www.googleapis.com/auth/cloud-platform'],
     });
 
